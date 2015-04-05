@@ -1,0 +1,215 @@
+/*
+ * Author: Yuheng Deng
+ * Date: 2015-03-12
+ * Update: 2015-03-28
+ * E-mail: dengyh071@gmail.com
+ * Description: The base style of the page
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#at-plus-container {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  bottom: 25%;
+}
+
+#bottom-positioner {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* --------- button style block --------- */
+#button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  transition: all 0.5s;
+}
+
+#button:hover {
+  width: 240px;
+  height: 240px;
+  left: -104px;
+  top: -104px;
+}
+/* ------------- block end -------------- */
+
+/* ------ button info-bar style block ----- */
+#button #info-bar {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 16px;
+  top: 16px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#button:hover #info-bar {
+  background-color: rgba(138,138,138,1);
+  width: 140px;
+  height: 140px;
+  top: -64px;
+  left: 49px;
+}
+
+#button #info-bar .info {
+  width: 100%;
+  height: 100%;
+  padding-top: 30%;
+}
+
+#button #info-bar #result {
+  color: rgba(89,193,147,1);
+  font-weight: bolder;
+  text-align: center;
+  font-size: 0;
+  transition: all 0.5s;
+}
+
+#button:hover #info-bar #result {
+  font-size: 36px;
+}
+/* -------------- block end ------------- */
+
+/* -------- control ring style block -------- */
+#button #control-ring-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#button #control-ring-container #control-ring {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+#control-ring .button {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  list-style: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#button:hover #control-ring .button {
+  background-color: rgba(48,63,159,1);
+  width: 44px;
+  height: 44px;
+}
+
+#button:hover #control-ring .mask {
+  left: 8px;
+  top: 48px;
+}
+
+#button:hover #control-ring .history {
+  left: 0px;
+  top: 100px;
+}
+
+#button:hover #control-ring .message {
+  left: 28px;
+  top: 146px;
+}
+
+#button:hover #control-ring .setting {
+  left: 82px;
+  top: 162px;
+}
+
+#button:hover #control-ring .sign {
+  left: 134px;
+  top: 144px;
+}
+
+#control-ring .button .word {
+  color: rgba(89,193,147,1);
+  font-weight: bolder;
+  font-size: 0;
+  line-height: 42px;
+  transition: all 0.5s;
+}
+
+#button:hover #control-ring .button .word {
+  font-size: 24px;
+}
+
+#control-ring .button .unread {
+  background-color: white;
+  text-align: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  transition: all 0.5s;
+}
+
+#button:hover #control-ring .button .unread {
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+  background-color: rgba(255,89,78,1);
+}
+
+#control-ring .button .hidden {
+  display: none;
+}
+/* ----------- block end ------------------*/
+
+/* -------- atplus button style block ------ */
+#button .apb {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#button:hover .apb {
+  left: 104px;
+  top: 104px;
+}
+
+#button .apb .icon {
+  background-image: url('../images/atplus_white.png');
+  background-color: rgba(170,170,210,1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%, 80%;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+#button:hover .apb .icon {
+  background-color: rgba(48,63,159,1);
+  background-image: url('../images/atplus_green.png');
+  transform: scale(2,2);
+  -moz-transform: scale(2,2);
+  -webkit-transform: scale(2,2);
+}
+/* ------------ block end ------------- */

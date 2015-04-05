@@ -1,0 +1,320 @@
+/*
+ * Author: Yuheng Deng
+ * Date: 2015-03-12
+ * Update: 2015-03-28
+ * E-mail: dengyh071@gmail.com
+ * Description: The base style of the page
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#at-plus-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 200px;
+}
+
+#bottom-positioner,
+#button,
+#control-ring-container,
+#control-ring,
+#apb {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#bottom-positioner {
+  width: 300px;
+  height: 300px;
+}
+
+#control-ring li.button {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+#info-bar {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#info-bar .info ul,
+#info-bar .info,
+#info-bar .info ul li {
+  position: absolute;
+  list-style: none;
+  width: 100%;
+}
+
+.info ul li img {
+  width: 0;
+  height: 0;
+  transition: all 0.5s;
+}
+
+.info ul li.page span {
+  color: white;
+}
+
+.info ul li.mine span {
+  color: #079E6E;
+}
+
+.info ul li span {
+  font-size: 0;
+  font-weight: 900;
+  padding-left: 6px;
+  transition: all 0.5s;
+}
+
+.info ul li.comment span {
+  padding-left: 20px;
+}
+
+.info ul li {
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+
+div.buttonHover .info ul li.user {
+  left: 40px;
+  top: 2px;
+}
+
+div.buttonHover .info ul li.comment {
+  left: 28px;
+  top: 36px;
+}
+
+div.buttonHover .info ul li.posted {
+  left: 20px;
+  top: 80px;
+}
+
+div.buttonHover .info ul li.like {
+  left: 72px;
+  top: 80px;
+}
+
+div.buttonHover .info ul li.user img,
+div.buttonHover .info ul li.mine img {
+  width: 24px;
+  height: 24px;
+}
+
+div.buttonHover .info ul li.user span {
+  font-size: 20px;
+}
+
+div.buttonHover .info ul li.mine span {
+  font-size: 16px;
+}
+
+div.buttonHover .info ul li.comment img {
+  width: 36px;
+  height: 36px;
+}
+
+div.buttonHover .info ul li.comment span {
+  font-size: 36px;
+}
+
+.mask {
+  /*background-image: url('../images/mask.png');*/
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+.history {
+  /*background-image: url('../images/history.png');*/
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+.message {
+  /*background-image: url('../images/message.png');*/
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+li .unread {
+  background-color: white;
+  text-align: center;
+  border-radius: 100%;
+  color: white;
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.setting {
+  /*background-image: url('../images/setting.png');*/
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+.sign {
+  /*background-image: url('../images/signin.png');*/
+  width: 1px;
+  height: 1px;
+  left: 20px;
+  top: 6px;
+  transition: all 0.5s;
+}
+
+.icon {
+  background-image: url('../images/atplus_white.png');
+  background-color: rgba(170,170,210,1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28px 20px;
+  padding: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+
+div.buttonHover #info-bar {
+  background-color: rgba(138,138,138,1);
+  width: 140px;
+  height: 140px;
+  top: -160px;
+  left: -50px;
+}
+
+div.buttonHover .icon {
+  background-color: rgba(48,63,159,1);
+  background-image: url('../images/atplus_green.png');
+  -webkit-transform: scale(1.5,1.5);
+}
+
+div.buttonHover .mask {
+  background-color: rgba(48,63,159,1);
+  background-size: 22px 22px;
+  left: -80px;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+}
+
+div.buttonHover .history {
+  background-color: rgba(48,63,159,1);
+  background-size: 22px 22px;
+  left: -85px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+div.buttonHover .message {
+  background-color: rgba(48,63,159,1);
+  background-size: 22px 22px;
+  left: -60px;
+  top: 55px;
+  width: 40px;
+  height: 40px;
+}
+
+div.buttonHover li .unread {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: rgba(255,89,78,1);
+}
+
+div.buttonHover li .word {
+  font-size: 24px;
+}
+
+div.buttonHover .setting {
+  background-color: rgba(48,63,159,1);
+  background-size: 22px 22px;
+  left: -10px;
+  top: 75px;
+  width: 40px;
+  height: 40px;
+}
+
+div.buttonHover .sign {
+  background-color: rgba(48,63,159,1);
+  background-size: 22px 22px;
+  left: 40px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.word {
+  color: rgba(89,193,147,1);
+  font-weight: bolder;
+  font-size: 0;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+
+#result {
+  color: rgba(89,193,147,1);
+  font-weight: bolder;
+  text-align: center;
+  font-size: 0;
+  transition: all 0.5s;
+}
+
+div.buttonHover #result {
+  font-size: 36px;
+}
+
+div.buttonHover li.forbidden {
+  background-color: rgba(138,138,138,1);
+  transition: all 0.05s;
+}
+
+div.buttonHover li.disable {
+  background-color: rgba(138,138,138,1);
+  transition: all 0.5s;
+}
