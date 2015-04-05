@@ -63,8 +63,8 @@ function getXmlHttpRequest() {
 
 function addEventToHoverButton() {
   var button = document.getElementById('button');
-  button.addEventListener('mouseover', function() {
-    // button.addClass('buttonHover');
+  button.addEventListener('mouseout', function() {
+    initializeButtons();
   });
 }
 
@@ -86,7 +86,7 @@ function initializeButtons() {
 
 function checkWhetherPointerOut() {
   var infoBar = document.getElementById('info-bar');
-  if (infoBar.offsetHeight < 100) {
+  if (infoBar.offsetHeight < 140) {
     return true;
   }
   return false;
@@ -113,7 +113,7 @@ function addEventToButton(button, buttons) {
     var numSpan = button.getElementsByClassName('unread')[0];
     numSpan.innerHTML = "..."
     numSpan.removeClass('hidden');
-    getData('http://localhost:3000', function(data) {
+    ajaxGetData('http://localhost:3000', function(data) {
       acceptOtherButtons(button, buttons);
       button.addClass('disable');
       numSpan.innerHTML = data;

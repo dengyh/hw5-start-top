@@ -142,12 +142,13 @@
   color: rgba(89,193,147,1);
   font-weight: bolder;
   font-size: 0;
-  line-height: 42px;
+  line-height: 0px;
   transition: all 0.5s;
 }
 
 #button:hover #control-ring .button .word {
   font-size: 24px;
+  line-height: 42px;
 }
 
 #control-ring .button .unread {
@@ -213,3 +214,13 @@
   -webkit-transform: scale(2,2);
 }
 /* ------------ block end ------------- */
+
+#button:hover li.forbidden {
+  background-color: rgba(138,138,138,1);
+  transition: all 0.5s;
+}
+
+#button:hover li.disable {
+  background-color: rgba(138,138,138,1);
+  transition: all 0.5s;
+}
